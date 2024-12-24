@@ -23,6 +23,7 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    box-shadow: 0 5px 5px grey;
     
 } 
 
@@ -66,7 +67,7 @@ header::after{
     text-shadow: 5px 5px 0 rgb(68, 83, 110);
 }
 
-.hero-text button{
+.hero-text button, .contact-button{
     cursor: pointer;
     color: white;
     width: 10rem;
@@ -77,6 +78,46 @@ header::after{
     background-color: rgb(9, 27, 59);
 }
 
-.hero-text button:hover{
+.hero-text button:hover, .contact-button:hover{
     background-color: rgb(26, 57, 112);
-} 
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.work-site, .project-container{
+    width: 100%;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+}
+
+.work-site{
+    background-color: rgb(198, 212, 238); 
+}
+
+.work-site > *{
+    align-self: center;
+    justify-self: center;
+}
+
+.work-site img{
+    width: 90%;
+}
+.contact-info-container{
+    color: rgb(9, 27, 59);
+    text-shadow: 5px 5px 0 rgb(83, 117, 177);
+    font-size: 5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; 
+}
+
+.project-container{
+    background-color: rgb(9, 27, 59);
+}
