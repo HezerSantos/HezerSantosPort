@@ -9,3 +9,18 @@ npm init -y
 module.exports = {
   presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
 };
+
+Battle ship:
+https://github.com/HezerSantos/battle-ship
+
+Poke-Git
+https://github.com/HezerSantos/Poke-Git
+
+Space Management
+https://github.com/HezerSantos/space_agency_management
+
+Movie and Travel page
+https://github.com/um-202480-comp-3081/sa13-act1-hnsantos
+
+DElights daily
+https://github.com/um-202480-comp-3081/sa13-act2-hnsantos
