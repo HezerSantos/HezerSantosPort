@@ -11,7 +11,7 @@
         <aside class="hero-text">
             <h1>Hey!</h1>
             <h1>I'm Hezer</h1>
-            <button>View Work</button>
+            <a href="#project-container">View Work</a>
         </aside>
     </header>
 
@@ -24,21 +24,31 @@
             <img src="./images/mactemps.png" alt="Website Examples">
         </section>
 
-        <section class="project-container">
+        <section class="project-container" id="project-container">
             <h1>My Projects</h1>
             <aside class="project-display-container">
                 <button class="slide-buttons" id="back-button"><</button>
                     <div class="project-display" id="project-display">
-                        <img src="./images/spaceagency.png" alt="space agency">         
+                        <img src="./images/spaceagency.png" alt="space agency">
+                        <a  href="https://github.com/HezerSantos/space-agency" target="_blank" rel="noopener noreferrer" id = "link-to" class="hide">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>open-in-new</title><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>         
+                        </a>        
                     </div>
                 <button class="slide-buttons" id="next-button">></button>
             </aside>
             <aside class="project-description" id="project-description">
-                <div class="language-container">
-
+                <div class="language-container"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" />          
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
                 </div>
                 <div class="description-container">
-                    
+                    <h1 class="project-title">Space Agency</h1>
+                    <p class="description">
+                        Space Agency Management system using Django for the backend. Allows quick search look up and column sorting.
+                    </p>
                 </div>
             </aside>
         </section>
