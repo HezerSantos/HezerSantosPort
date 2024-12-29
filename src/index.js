@@ -49,7 +49,7 @@ const travelMockUp = project(
         "CSS",
         "JavaScript"
     ],
-    "A mock up for a travel site, highlighting the main features of each destination.",
+    "A mock up for a travel site, highlighting the main features of each destination. Built with basic Website Development Languages.",
     travelMockUpImage
 )
 
@@ -61,7 +61,7 @@ const pokePicker = project(
         "CSS",
         "JavaScript"
     ],
-    "A site that utilizes the Poke API that allows to create a team of SIX Pokemon.",
+    "A site that utilizes the Poke API that allows to create a team of SIX Pokemon. Add and delete functions with proper error handling.",
     pokePickerImage
 )
 
