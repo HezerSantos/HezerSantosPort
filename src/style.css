@@ -25,7 +25,6 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     box-shadow: 0 5px 5px grey;
-    
 } 
 
 header::after{
@@ -60,6 +59,7 @@ header::after{
     justify-content: center;
     flex-direction: column;
     color: white;
+    text-align: center;
 }
 
 .hero-text h1{
@@ -138,7 +138,7 @@ main{
 }
 
 .project-container > * {
-    font-family: headers;
+    font-family: main;
     align-self: center;
     justify-self: center;
 }
@@ -224,11 +224,11 @@ main{
     gap: clamp(1rem, 1vw, 2rem);
 }
 .description-container h1{
-    font-family: headers;
+    font-family: main;
 }
 .description-container p{
     text-align: center;
-    color: white;
+    color: white; 
 }
 
 .language-container::after, .description-container::after{
@@ -325,4 +325,109 @@ footer > * {
 
 footer > * path{
     fill: rgb(83, 117, 177);
+}
+
+@media (max-width: 1440px) {
+    .hero-text h1{
+        font-size: 6rem;
+    }
+
+    .contact-info-container{
+        font-size: 3rem;
+    }
+    .description-container h1{
+        font-size: 2rem;
+    }
+    .description-container p{
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .hero-image{
+        width: 10rem;
+    }
+    .hero-text{
+        width: max-content;
+        height: max-content;
+        gap: 2rem;
+    }
+    .hero-text h1{
+        font-size: 3rem;
+    }
+
+    .contact-info-container{
+        font-size: 2rem;
+        justify-content: center;
+        height: max-content;
+        gap: 3rem;
+    }
+
+    .hero-text a, .contact-button{
+        width: 9rem;
+    }
+
+    .work-site{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .work-site img{
+        width: 80%;
+    }
+
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+    }
+    .project-container h1{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2rem;
+    }
+    .description-container{
+        justify-content: center;
+    }
+    .description-container h1{
+        font-size: 1.1rem;
+    }
+    .description-container p{
+        font-size: .5rem;
+    }
+
+    footer > * {
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+@media (max-width: 375px){
+    .slide-buttons{
+        overflow: hidden;
+    }
+    .project-container h1{
+        font-size: 1.5rem;
+    }
+    .description-container h1{
+        font-size: 1rem;
+    }
+    .description-container p{
+        font-size: .5rem;
+    }
 }
