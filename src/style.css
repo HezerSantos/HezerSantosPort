@@ -58,14 +58,14 @@ header::after{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: rgb(138, 169, 221);;
     text-align: center;
 }
 
 .hero-text h1{
     font-family: main;
     font-size: 8rem;
-    text-shadow: 5px 5px 0 rgb(68, 83, 110);
+    text-shadow: 5px 5px 0 rgb(35, 52, 83);  
 }
 
 .hero-text a, .contact-button{
@@ -225,10 +225,12 @@ main{
 }
 .description-container h1{
     font-family: main;
+    height: max-content;
 }
 .description-container p{
     text-align: center;
     color: white; 
+    height: max-content;
 }
 
 .language-container::after, .description-container::after{
@@ -426,6 +428,18 @@ footer > * path{
     }
     .description-container h1{
         font-size: .8rem;
+    }
+    .description-container p{
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 320px){
+    .project-container h1{
+        font-size: 1.5rem;
+    }
+    .description-container h1{
+        font-size: .5rem;
     }
     .description-container p{
         font-size: .5rem;
