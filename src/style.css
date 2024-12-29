@@ -434,7 +434,7 @@ footer > * path{
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 390px){
     .project-container h1{
         font-size: 1.5rem;
     }
