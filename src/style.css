@@ -226,11 +226,13 @@ main{
 .description-container h1{
     font-family: main;
     height: max-content;
+    font-size: clamp(.5rem, 2vw, 3rem);
 }
 .description-container p{
     text-align: center;
     color: white; 
     height: max-content;
+    font-size: clamp(.5rem, 1vw, 2rem);
 }
 
 .language-container::after, .description-container::after{
@@ -337,15 +339,13 @@ footer > * path{
     .contact-info-container{
         font-size: 3rem;
     }
-    .description-container h1{
-        font-size: 2rem;
-    }
-    .description-container p{
-        font-size: .8rem;
-    }
 }
 
 @media (max-width: 1024px) {
+    header, .work-site, .project-container, footer{
+        min-width: 400px;
+        min-height: max-content;
+    }
     header{
         display: flex;
         flex-direction: column;
@@ -385,7 +385,7 @@ footer > * path{
     }
 
     .work-site img{
-        width: 80%;
+        width: clamp(18.75rem, 30vw, 54rem);
     }
 
     .project-container{
@@ -396,7 +396,7 @@ footer > * path{
         gap: 1rem;
         position: relative;
     }
-    .project-container h1{
+    .project-container > h1:first-of-type{
         position: absolute;
         top: 5%;
         left: 50%;
@@ -405,12 +405,6 @@ footer > * path{
     }
     .description-container{
         justify-content: center;
-    }
-    .description-container h1{
-        font-size: 1rem;
-    }
-    .description-container p{
-        font-size: .5rem;
     }
 
     footer > * {
@@ -426,22 +420,10 @@ footer > * path{
     .project-container h1{
         font-size: 1.5rem;
     }
-    .description-container h1{
-        font-size: .5rem;
-    }
-    .description-container p{
-        font-size: .5rem;
-    }
 }
 
-@media (max-width: 390px){
+@media (max-width: 480px){
     .project-container h1{
         font-size: 1.5rem;
-    }
-    .description-container h1{
-        font-size: .5rem;
-    }
-    .description-container p{
-        font-size: .5rem;
     }
 }
