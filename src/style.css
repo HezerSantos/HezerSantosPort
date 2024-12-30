@@ -186,7 +186,7 @@ main{
 .project-display, .project-description{
     position: relative;
     width: clamp(15rem, 29.17vw, 40rem);
-    height: clamp(10rem, 20.83vw, 30rem);
+    height: clamp(12rem, 20.83vw, 30rem);
     border-radius: 1rem;
     display: flex;
     align-items: center;
